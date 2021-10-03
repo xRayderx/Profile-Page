@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="profile landing page">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jose Martinez">
+	<title>Portfolio</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/portfolio.css">
+
+	<!-- Icon -->
+	<link rel="icon" type="img/x-icon" href="assets/image/mypc.png">
+
+	<!-- Script -->
+	<script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+	<!-- Header -->
+
+	<nav id="navLateral" class="sideNav">
+		<!-- Boton de cerrar -->
+		<a href="javascript:void(0)" class="btnCerrar" onclick="cerrarNav()">&times;</a>
+
+		<!-- Menu -->
+		<a class="link" href="index.html">Home</a>
+		<a class="link" href="about.html">About Me</a>
+		<a class="link" href="portfolio.html">Portfolio</a>
+
+		<!-- Redes Sociales -->
+		<ul>
+			<li>
+				<a href="#" target="_blank">
+					<img class="rrss" src="assets/image/facebook.png" alt="facebook">
+				</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">
+					<img class="rrss" src="assets/image/linkedin.png" alt="linkedin">
+				</a>
+			</li>
+			<li>
+				<a href="#" target="_blank">
+					<img class="rrss" src="assets/image/github.png" alt="github">
+				</a>
+			</li>
+		</ul>
+
+		<h3>&copy; Jose Martinez - 2021</h3>
+	</nav>
+
+	<!-- Toggler -->
+	<span class="toggler" onclick="abrirNav()">&#9776;</span>
+
+	<!-- Portfolio -->
+
+	<section class="portfolio-container">
+		<h1 class="title">Some Projects</h1>
+
+		<div class="gallery">
+			<div class="project-item"><img src="assets/image/photo1.jpg" alt="item1"></div>
+			<div class="project-item"><img src="assets/image/photo2.jpg" alt="item2"></div>
+			<div class="project-item"><img src="assets/image/photo3.jpg" alt="item3"></div>
+			<div class="project-item"><img src="assets/image/photo4.jpg" alt="item4"></div>
+			<div class="project-item"><img src="assets/image/photo5.jpg" alt="item5"></div>
+			<div class="project-item"><img src="assets/image/photo6.jpg" alt="item6"></div>
+		</div>
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Stencil';
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+/* Side Menu */
+
+.sideNav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: #0E131F;
+	overflow-x: hidden;
+	transition: .4s;
+	padding-top: 60px;
+	text-align: center;
+}
+
+.sideNav .link{
+	margin-top: 25px;
+	padding: 32px 0 32px;
+	text-decoration: none;
+	letter-spacing: 5px;
+	font-family: 'Stencil';
+	font-size: 25px;
+	color: #8B939C;
+	display: block;
+	transition: .3s;
+}
+
+.sideNav .link:hover{
+	color: #f1f1f1;
+}
+
+.sideNav .btnCerrar{
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	text-decoration: none;
+	color: #8B939C;
+	font-size: 36px;
+	font-weight: 700;
+	margin-left: 50px;
+}
+
+.sideNav .btnCerrar:hover{
+	color: #f1f1f1;
+}
+
+.sideNav h3{
+	margin: 3.6rem 0;
+	color: #8B939C;
+}
+
+
+@media screen and (max-height: 450px) {
+	.sideNav{
+		padding-top: 15px;
+	}
+
+	.sideNav .link{
+		font-size: 18px;
+	}
+}
+
+/* Toggler */
+
+.toggler{
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	z-index: 1;
+	color: #FF0035;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.toggler:hover{
+	opacity: .8;
+}
+
+/* Redes sociales */
+
+ul{
+	list-style: none;
+	margin-top: 3em;
+}
+
+ul li{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+ul a{
+	text-decoration: none;
+}
+
+.rrss{
+	max-width: 100%;
+	width: 35px;
+	transition: all .25s ease-in-out;
+}
+
+.rrss:hover{
+	transform: rotate(360deg);
+	opacity: .8;
+}

@@ -1,0 +1,74 @@
+body{
+	background-color: #38405F;
+	color: #F1F1F1;
+}
+
+.profile-container{
+	padding: 80px 0;
+	height: 100vh;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.photo{
+	grid-column: span 3;
+}
+
+.photo img{
+	width: 100%;
+	max-width: 625px;
+	height: 75vh;
+	box-shadow: 5px 5px 5px #1A1A1A;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.text{
+	grid-column: span 3;
+}
+
+.text h1{
+	font-size: 36px;
+	line-height: 1.6;
+	text-align: center;
+	padding: 25px 25px 0;
+	text-shadow: 2px 2px 2px #1A1A1A;
+}
+
+.text p{
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 25px 25px;
+}
+
+@media screen and (max-width: 768px){
+
+	.profile-container{
+		height: 100%;
+	}
+
+	.container{
+		display: block;
+	}
+
+	.photo img{
+		width: 100%;
+		max-width: 738px;
+		height: 50vh;
+	}
+
+	.text h1{
+		font-size: 20px;
+	}
+
+	.text p{
+		font-size: 1rem;
+	}
+}
